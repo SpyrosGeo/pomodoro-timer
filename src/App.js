@@ -22,12 +22,13 @@ function App() {
       seconds
     }
 
+    console.log(time)
     setTimer(time)
-
   }
 const handleClick =  (e)=>{
   e.preventDefault();
-  console.log(e.target.value)
+  let secs = e.target.value
+  secondsToTime(+secs)
 }
 
   return (
