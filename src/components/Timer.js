@@ -1,9 +1,13 @@
-import React from 'react'
 
-export default function Timer() {
+
+export default function Timer({timer}) {
+
+//Convert seconds to Timeh
+
     return (
-        <div> 
+        <div>
             Timer
+            {timer.hours}-{timer.minutes}-{timer.seconds}
         </div>
     )
 }
