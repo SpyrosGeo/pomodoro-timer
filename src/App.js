@@ -1,11 +1,11 @@
 import './App.css';
-import { useState, useEffect } from 'react'
+import { useState,  } from 'react'
 import Timer from './components/Timer';
 import Button from './components/Button'
 import { Container } from '@material-ui/core';
 
 function App() {
-  const [timeInSeconds, setTimeInSeconds] = useState();
+  // const [timeInSeconds, setTimeInSeconds] = useState();
   const [timer, setTimer] = useState({})
   const secondsToTime = (secs) => {
     let hours = Math.floor(secs / (60 * 60))
